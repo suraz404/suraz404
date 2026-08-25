@@ -3,7 +3,6 @@ name: Update README Live Activity
 on:
   schedule:
     - cron: "0 0 * * *"
-
   workflow_dispatch:
 
 permissions:
@@ -11,27 +10,13 @@ permissions:
 
 jobs:
   update-readme:
+    name: Update GitHub Activity
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Update recent activity
+      - name: Update README with recent activity
         uses: jamesgeorge007/github-activity-readme@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Commit and push changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-
-          git add README.md
-
-          if ! git diff --cached --quiet; then
-            git commit -m "⚡ Update README activity"
-            git push
-          else
-            echo "No changes to commit"
-          fi
