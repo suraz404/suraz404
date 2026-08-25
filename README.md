@@ -236,6 +236,8 @@ npm install awesome-ideas
 
 <br/><br/>
 
+<img src="./assets/bg removed.png" width="100%" alt="Deadpool" />
+
 
 
 </div>
