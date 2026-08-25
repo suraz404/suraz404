@@ -239,10 +239,10 @@ npm install awesome-ideas
 <div align="center">
 
 <a href="https://www.linkedin.com/in/suraj-agrahari-982a272a9/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:YOUR_EMAIL"><img src="https://img.shields.io/badge/Email-E8B15A?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="mailto:surazagrahari1980@gmail.com"><img src="https://img.shields.io/badge/Email-E8B15A?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=YOUR_GITHUB_USERNAME&style=for-the-badge&color=E8B15A" alt="Profile views" />
+
 
 </div>
