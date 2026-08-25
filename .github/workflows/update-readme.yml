@@ -2,11 +2,9 @@ name: Update README Live Activity
 
 on:
   schedule:
-    # Runs every day at 00:00 UTC — adjust as you like
-    - cron: '0 0 * * *'
-  workflow_dispatch: {}
-  push:
-    branches: [main]
+    - cron: "0 0 * * *"
+
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -14,21 +12,26 @@ permissions:
 jobs:
   update-readme:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Update recent activity section
+      - name: Update recent activity
         uses: jamesgeorge007/github-activity-readme@master
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # This action looks for <!--START_SECTION:activity--> ... <!--END_SECTION:activity-->
-          # in README.md and fills it with your last 5 GitHub events.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit and push if changed
+      - name: Commit and push changes
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
           git add README.md
-          git diff --quiet && git diff --staged --quiet || git commit -m "chore: update live activity section"
-          git push
+
+          if ! git diff --cached --quiet; then
+            git commit -m "⚡ Update README activity"
+            git push
+          else
+            echo "No changes to commit"
+          fi
