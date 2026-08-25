@@ -158,14 +158,7 @@ NEXT ────── Cloud · DevOps · Open source · Bigger products
 
 <div align="center">
 
-<!-- ═══════════════ CONTRIBUTION SNAKE ═══════════════ -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/suraz404/suraz404/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/suraz404/suraz404/output/github-contribution-grid-snake.svg" />
-  <img width="90%" src="https://raw.githubusercontent.com/suraz404/suraz404/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" />
-</picture>
 
-<br/><br/>
 
 <!-- ═══════════════ VISITOR COUNTER ═══════════════ -->
 <img src="https://komarev.com/ghpvc/?username=suraz404&label=Profile%20Views&color=7aa2f7&style=flat-square" alt="Visitor Count" />
