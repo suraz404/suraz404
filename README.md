@@ -2,6 +2,9 @@
 
 <img src="./assets/banner.svg" width="100%" alt="Suraj Agrahari — full-stack developer banner" />
 
+
+
+
 <br/>
 
 <a href="https://github.com/suraz404">
@@ -22,6 +25,10 @@
 
 <br/>
 
+
+
+
+
 ## 🟢 Developer status
 
 ```text
@@ -38,11 +45,15 @@
 
 <br/>
 
-## 👋 Who is this
+## ✋Who is this
+
+
+<img src="./assets/bg removed.png" align="center" width="70%" alt="Deadpool" />
 
 I'm Suraj , a full-stack developer based in Nepal who builds products end to end, from the first commit to something real people can open in a browser. My core stack is JavaScript, TypeScript, React, Next.js, Node.js, Express, MongoDB, and Zustand for state — and I'm currently pushing further into cloud infrastructure, DevOps, and AI-integrated applications.
 
 I'm less interested in collecting frameworks than in shipping things that solve an actual problem, ideally one grounded in a real context rather than a hypothetical one.
+
 
 <br/>
 
@@ -236,7 +247,6 @@ npm install awesome-ideas
 
 <br/><br/>
 
-<img src="./assets/bg removed.png" width="100%" alt="Deadpool" />
 
 
 
